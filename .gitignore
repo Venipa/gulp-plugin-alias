@@ -107,3 +107,4 @@ tmp
 Backupper.parameters.txt
 npm-debug.log
 jsconfig.json
+package-lock.json

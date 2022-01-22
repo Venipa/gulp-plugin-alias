@@ -1,6 +1,6 @@
 {
-  "name": "@gulp-plugin/alias",
-  "version": "2.2.2",
+  "name": "gulp-plugin-alias",
+  "version": "2.2.3",
   "description": "Use Gulp to resolve Typescript path aliases during compilation.",
   "main": "./lib/index.js",
   "types": "./typings/index.d.ts",
@@ -19,13 +19,17 @@
     "test:coverage": "coveralls < coverage/lcov.info",
     "prepublishOnly": "npm run build"
   },
-  "author": {
+  "author":{
+    "name": "Venipa",
+    "url": "https://github.com/Venipa"
+  },
+  "contributess": [{
     "name": "David Katz",
     "url": "https://github.com/dhkatz"
-  },
+  }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gulp-plugin/alias"
+    "url": "https://github.com/Venipa/gulp-plugin-alias"
   },
   "license": "MIT",
   "keywords": [
