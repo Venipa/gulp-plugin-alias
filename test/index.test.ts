@@ -50,6 +50,12 @@ const tests: Record<string, Test> = {
     input: "import module from 'module'\nimport Component from '@/components'",
     output: "import module from 'module'\nimport Component from '../components'",
   },
+  ['should support wild card aliases within the same relative directory']: {
+    options: { config: { paths: { '@/*': ['./src/*'] } } },
+    path: './src/index.ts',
+    input: "import module from 'module'\nimport config from '@/config'",
+    output: "import module from 'module'\nimport config from './config'",
+  },
   ['should skip commented imports']: {
     options: { config },
     path: './src/pages/Page.ts',
